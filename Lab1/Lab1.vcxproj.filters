@@ -26,8 +26,10 @@
     <Text Include="Task.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="ToDo.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Макет страницы.png">
+      <Filter>Source Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

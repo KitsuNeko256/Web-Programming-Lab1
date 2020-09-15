@@ -144,7 +144,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Task.txt" />
-    <Text Include="ToDo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Макет страницы.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

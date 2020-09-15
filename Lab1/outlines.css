@@ -55,8 +55,7 @@ aside::before {
   color: #9779ec;
 }
 
-h1 {
-  font-size: 18px;
+h1, h2, h3, h4, h5, h6 {
   background-color: #ffffff;
   border: 2px solid #ff994f;
 }
@@ -64,6 +63,26 @@ h1 {
 h1::before {
   content: "h1";
   color: #ff994f;
+}
+h2::before {
+    content: "h2";
+    color: #ff994f;
+}
+h3::before {
+    content: "h3";
+    color: #ff994f;
+}
+h4::before {
+    content: "h4";
+    color: #ff994f;
+}
+h5::before {
+    content: "h5";
+    color: #ff994f;
+}
+h6::before {
+    content: "h6";
+    color: #ff994f;
 }
 
 p {
@@ -131,4 +150,9 @@ aside::before {
 
 nav::before {
   content: "nav";
+}
+
+.formula {
+    padding: 5px, 10px;
+    background-color: #00ffff55
 }

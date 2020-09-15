@@ -3,32 +3,95 @@
 
 <head>
     <meta charset="utf-8">
-    <link href='outlines.css' rel='stylesheet'>
     <title>Козлов Андрей M33011</title>
+    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
+    <meta name="author" content="Kozlov Andrey M33011 at ITMO University">
+    <meta name="keywords" content="Андрей Козлов,Портфолио,Программист,Разработка игр,С++">
+    <! -- <link href='outlines.css' rel='stylesheet'> -->
+    <link href='outlines.css' rel='stylesheet'>
 </head>
 
 <body>
     <header>
-        Русский
-        English
-
+        <nav>
+            Контакты, Примеры работ, Я на других ресурсах
+        </nav>
     </header>
 
     <main>
-        Успехи:
-        <ol>
-            <li>Успех 1</li>
-            <li>Успех 2</li>
-            <li>Успех 3</li>
-        </ol>
-        <ul>
-            <li>Антиуспех 1</li>
-            <li>Антиуспех 2</li>
-            <li>Антиуспех 3</li>
-        </ul>
+        <h1>Портфолио</h1>
+        <h2>Андрей Козлов, студент 3 курса ИТМО</h2>
 
-        <pre> 
-ТОТЕМНОЕ ЖИВОТНОЕ░░
+        <section>
+            <h4>Мои навыки:</h4>
+            <dl>
+                <dt>Программирование на С++</dt>
+                <dd>Изучаю и практикую С++ более семи лет</dd>
+                <dd>Четыре года занимался спортивным программированием и проходил курсы с опытными участниками олимпиад</dd>
+                <dt>Английский язык</dt>
+                <dd>Свободно говорю и понимаю английский язык на уровне C1 или выше</dd>
+                <dd>Дважды проходил экзамен IELTS с общими оценками 7 и 7.5</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h4>Мои достижения:</h4>
+            <ol>
+                <li>Закончил 12 лет в лицее физико-математического направления</li>
+                <li>Участвовал в нескольких олимпиадах по спортивному программированию для школьников и занимал призовые места</li>
+                <li>Обучаюсь в университете ИТМО на специализации ИТИП/ИС на третьем курсе  </li>
+            </ol>
+
+        </section>
+
+        <section>
+            <h4>Мои цели:</h4>
+            <ul>
+                <li>Совершенствовать знание языка и алгоритмов для написания быстрого и эффективного кода</li>
+                <li>Изучение различных аспектов разработки игр и гейм-дизайна</li>
+                <li>Создать игру</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>Пример моего кода: (код обхода карты коллизий)</h4>
+            <pre><code>
+void CollisionMap::checkAllCollisions() {
+    for (uint16_t x1 = 0; x1 < width; ++x1) {
+        for (uint16_t y1 = 0; y1 < height; ++y1) {
+            for (uint16_t i = 0; i < map[x1][y1].size(); ++i) {
+                if (!map[x1][y1][i]->getActive())
+                    continue;
+                Vector2int pos = map[x1][y1][i]->getMapPosition();
+                uint16_t left = max(0, pos.x - 1);
+                uint16_t right = min(pos.x + 1, width - 1);
+                uint16_t down = min(pos.y + 1, height - 1);
+                for (uint16_t j = i + 1; j < map[x1][y1].size(); ++j) {
+                    collideObjects(map[x1][y1][i], map[x1][y1][j]);
+                }
+                for (uint16_t x2 = x1 + 1; x2 <= right; ++x2) {
+                    for(uint16_t j = 0; j < map[x2][y1].size(); ++j)
+                        collideObjects(map[x1][y1][i], map[x2][y1][j]);
+                }
+                for (uint16_t x2 = left; x2 <= right; ++x2) {
+                    for (uint16_t y2 = y1 + 1; y2 <= down; ++y2) {
+                        for (uint16_t j = 0; j < map[x2][y2].size(); ++j)
+                            collideObjects(map[x1][y1][i], map[x2][y2][j]);
+                    }
+                }
+            }
+        }
+    }
+}
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>Обо мне</h3>
+
+            <h4>Тотемное животное:</h4>
+            <pre> 
+░░░░░░░░░░░░░░░░░░░
 ░ГУСЬ░▄▀▀▀▄░ГИДРА░░
 ▄███▀░◐░▄▀▀▀▄░░░░░░
 ░░▄███▀░◐░░░░▌░░░
@@ -41,13 +104,36 @@
 ░░░░▀▄░░░░▀▄▒▒▒▒▒▒▒▒▒▒▀▄
 ░░░░░░▀▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▀▄
 ░░░░░░░░░░░▌▌░▌▌░░░░░
-░░░░░░░░░░░▌▌░▌▌░░░░░
+░░░░░░░░░░░▌▌░▌▌░░░░░   
 ░░░░░░░░░▄▄▌▌▄▌▌░░░░░
         </pre>
+
+            <h4>Любимая цитата:</h4>
+            <blockquote>
+                <p>Слушай, Симон. <strong>Запомни.</strong> Тебе надо верить в <em>себя.</em> Не в себя, в которого верю я. И даже не в мою веру в тебя. <strong>Верь в себя!</strong> И в <em>свою</em> веру в себя!</p>
+                <cite>Камина, Tengen Toppa Gurren Lagann &copy;</cite>
+            </blockquote>
+
+            <h4>Формула успеха:</h4>
+            <span class="formula">
+                Энтузиазм<sub>внезапный</sub> + Практика<sup>много</sup> * Анализ<sub>интеллектуальный</sub> = Успех!<sub>возможный</sub>
+            </span>
+        </section>
+
+
+
     </main>
 
     <footer>
-
+        <aside>
+            <h4>Ссылки на полезные и интересные ресурсы</h4>
+            <h5>Игры и гейм-дизайн:</h5>
+            <a href="https://www.youtube.com/channel/UCY3A_5R_m3PXCn5XDhvBBsg">Youtube - Adam Millard - The Architect of Games</a><br />
+            <a href="https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw">Youtube - GMTK - Game Maker's Toolkit</a><br />
+            <a href="https://www.youtube.com/channel/UCfHmyqCntYHQ81ZukNu66rg">Youtube - Razbuten</a><br />
+        </aside>
+        <br />
+        <time datetime="15-09-2020">Версия сайта от 15 Сентября 2020 года</time>
     </footer>
 </body>
 
