@@ -21,7 +21,6 @@
   <ItemGroup>
     <None Include="..\main.html" />
     <None Include="..\outlines.css" />
-    <None Include="..\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\Макет страницы.png" />

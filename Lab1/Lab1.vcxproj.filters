@@ -21,9 +21,6 @@
     <None Include="..\outlines.css">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="..\README.md">
-      <Filter>Source Files</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\Макет страницы.png">
