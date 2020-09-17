@@ -15,20 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="main.html">
-      <Filter>Header Files</Filter>
+    <None Include="..\main.html">
+      <Filter>Source Files</Filter>
     </None>
-    <None Include="outlines.css">
+    <None Include="..\outlines.css">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\README.md">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Task.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Макет страницы.png">
+    <Image Include="..\Макет страницы.png">
       <Filter>Source Files</Filter>
     </Image>
   </ItemGroup>
