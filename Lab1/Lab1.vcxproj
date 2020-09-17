@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\main.html" />
+    <None Include="..\index.html" />
     <None Include="..\outlines.css" />
   </ItemGroup>
   <ItemGroup>

@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\main.html">
+    <None Include="..\outlines.css">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="..\outlines.css">
+    <None Include="..\index.html">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
