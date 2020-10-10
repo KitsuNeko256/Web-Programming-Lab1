@@ -21,10 +21,16 @@
     <None Include="..\index.html">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="..\styles.css">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\background.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
     <Image Include="..\Макет страницы.png">
-      <Filter>Source Files</Filter>
+      <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
 </Project>

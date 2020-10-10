@@ -1,0 +1,112 @@
+/*Big tags*/
+:root {
+    --bg_color: #100020;
+    --fg_color_purple: #302050b0;
+    --fg_color_pink: #401040;
+    --border_color: #60a0a0;
+    --text_color: #90e0e0;
+    --pre_color: #202020;
+    --pre_border_color: #808080;
+    --link_color: #7070f0;
+}
+
+html {
+    background-color: var(--bg_color);
+    color: var(--text_color);
+    font-family: "Rubik";
+}
+html::after {
+    content: "";
+    background-image: url('background.jpg');
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+nav, aside, .aboutMe, .skills, .examples {
+    background-color: var(--fg_color_purple);
+    border: 3px solid var(--border_color);
+}
+
+nav {
+    text-align: left;
+    vertical-align: middle;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+main, aside {
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+nav, aside, .aboutMe, .skills, .examples {
+    margin-top: 3%;
+    padding: 20px 20px 20px 20px;
+}
+
+aside {
+    width: 20%;
+    right: 0px;
+}
+
+
+
+/*Medium tags*/
+pre, .formula {
+    border: 1px solid var(--pre_border_color);
+    background-color: var(--pre_color);
+    padding: 10px 10px 10px 10px;
+}
+
+
+dt {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+ol, ul {
+    padding-bottom: 0px;
+}
+
+code {
+    font-size: 15px;
+}
+
+
+
+/*Small tags*/
+a {
+    color: var(--link_color);
+}
+
+nav a {
+    padding-right:20px;
+}
+
+h1, h2 {
+    text-align:center;
+}
+
+h4 {
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+
+/*My classes*/
+.formula {
+    margin-top: 10px;
+}
+
+.aboutMe {
+    background-color: var(--fg_color_pink);
+}

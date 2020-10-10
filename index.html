@@ -7,14 +7,16 @@
     <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
     <meta name="author" content="Kozlov Andrey M33011 at ITMO University">
     <meta name="keywords" content="Андрей Козлов,Портфолио,Программист,Разработка игр,С++">
-    <! -- <link href='outlines.css' rel='stylesheet'> -->
-    <link href='outlines.css' rel='stylesheet'>
+    <link href='styles.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
 </head>
-
 <body>
     <header>
         <nav>
-            Контакты, Примеры работ, Я на других ресурсах
+            <a href="">Главная</a>
+            <a href="">Контакты</a>
+            <a href="">Примеры работ</a>
+            <a href="">Я на других ресурсах</a>
         </nav>
     </header>
 
@@ -22,71 +24,77 @@
         <h1>Портфолио</h1>
         <h2>Андрей Козлов, студент 3 курса ИТМО</h2>
 
-        <section>
-            <h4>Мои навыки:</h4>
-            <dl>
-                <dt>Программирование на С++</dt>
-                <dd>Изучаю и практикую С++ более семи лет</dd>
-                <dd>Четыре года занимался спортивным программированием и проходил курсы с опытными участниками олимпиад</dd>
-                <dt>Английский язык</dt>
-                <dd>Свободно говорю и понимаю английский язык на уровне C1 или выше</dd>
-                <dd>Дважды проходил экзамен IELTS с общими оценками 7 и 7.5</dd>
-            </dl>
-        </section>
+        <div class="skills">
+            <section>
+                <h4>Мои навыки:</h4>
+                <dl>
+                    <dt>Программирование на С++</dt>
+                    <dd>Изучаю и практикую С++ более семи лет</dd>
+                    <dd>Четыре года занимался спортивным программированием и проходил курсы с опытными участниками олимпиад</dd>
+                    <dt>Английский язык</dt>
+                    <dd>Свободно говорю и понимаю английский язык на уровне C1 или выше</dd>
+                    <dd>Дважды проходил экзамен IELTS с общими оценками 7 и 7.5</dd>
+                </dl>
+            </section>
 
-        <section>
-            <h4>Мои достижения:</h4>
-            <ol>
-                <li>Закончил 12 лет в лицее физико-математического направления</li>
-                <li>Участвовал в нескольких олимпиадах по спортивному программированию для школьников и занимал призовые места</li>
-                <li>Обучаюсь в университете ИТМО на специализации ИТИП/ИС на третьем курсе  </li>
-            </ol>
+            <section>
+                <h4>Мои достижения:</h4>
+                <ol>
+                    <li>Закончил 12 лет в лицее физико-математического направления</li>
+                    <li>Участвовал в нескольких олимпиадах по спортивному программированию для школьников и занимал призовые места</li>
+                    <li>Обучаюсь в университете ИТМО на специализации ИТИП/ИС на третьем курсе  </li>
+                </ol>
 
-        </section>
+            </section>
 
-        <section>
-            <h4>Мои цели:</h4>
-            <ul>
-                <li>Совершенствовать знание языка и алгоритмов для написания быстрого и эффективного кода</li>
-                <li>Изучение различных аспектов разработки игр и гейм-дизайна</li>
-                <li>Создать игру</li>
-            </ul>
-        </section>
+            <section>
+                <h4>Мои цели:</h4>
+                <ul>
+                    <li>Совершенствовать знание языка и алгоритмов для написания быстрого и эффективного кода</li>
+                    <li>Изучение различных аспектов разработки игр и гейм-дизайна</li>
+                    <li>Создать игру</li>
+                </ul>
+            </section>
+        </div>
 
-        <section>
-            <h4>Пример моего кода: (код обхода карты коллизий)</h4>
-            <pre><code>
-void CollisionMap::checkAllCollisions() {
-    for (uint16_t x1 = 0; x1 < width; ++x1) {
-        for (uint16_t y1 = 0; y1 < height; ++y1) {
-            for (uint16_t i = 0; i < map[x1][y1].size(); ++i) {
-                if (!map[x1][y1][i]->getActive())
-                    continue;
-                Vector2int pos = map[x1][y1][i]->getMapPosition();
-                uint16_t left = max(0, pos.x - 1);
-                uint16_t right = min(pos.x + 1, width - 1);
-                uint16_t down = min(pos.y + 1, height - 1);
-                for (uint16_t j = i + 1; j < map[x1][y1].size(); ++j) {
-                    collideObjects(map[x1][y1][i], map[x1][y1][j]);
-                }
-                for (uint16_t x2 = x1 + 1; x2 <= right; ++x2) {
-                    for(uint16_t j = 0; j < map[x2][y1].size(); ++j)
-                        collideObjects(map[x1][y1][i], map[x2][y1][j]);
-                }
-                for (uint16_t x2 = left; x2 <= right; ++x2) {
-                    for (uint16_t y2 = y1 + 1; y2 <= down; ++y2) {
-                        for (uint16_t j = 0; j < map[x2][y2].size(); ++j)
-                            collideObjects(map[x1][y1][i], map[x2][y2][j]);
+        <div class="examples">
+            <section>
+                <h3>Примеры моего кода</h3>
+                <h4>Код обхода карты коллизий</h4>
+                <pre><code>
+    void CollisionMap::checkAllCollisions() {
+        for (uint16_t x1 = 0; x1 < width; ++x1) {
+            for (uint16_t y1 = 0; y1 < height; ++y1) {
+                for (uint16_t i = 0; i < map[x1][y1].size(); ++i) {
+                    if (!map[x1][y1][i]->getActive())
+                        continue;
+                    Vector2int pos = map[x1][y1][i]->getMapPosition();
+                    uint16_t left = max(0, pos.x - 1);
+                    uint16_t right = min(pos.x + 1, width - 1);
+                    uint16_t down = min(pos.y + 1, height - 1);
+                    for (uint16_t j = i + 1; j < map[x1][y1].size(); ++j) {
+                        collideObjects(map[x1][y1][i], map[x1][y1][j]);
+                    }
+                    for (uint16_t x2 = x1 + 1; x2 <= right; ++x2) {
+                        for(uint16_t j = 0; j < map[x2][y1].size(); ++j)
+                            collideObjects(map[x1][y1][i], map[x2][y1][j]);
+                    }
+                    for (uint16_t x2 = left; x2 <= right; ++x2) {
+                        for (uint16_t y2 = y1 + 1; y2 <= down; ++y2) {
+                            for (uint16_t j = 0; j < map[x2][y2].size(); ++j)
+                                collideObjects(map[x1][y1][i], map[x2][y2][j]);
+                        }
                     }
                 }
             }
         }
     }
-}
-            </code></pre>
-        </section>
+                </code></pre>
+            </section>
+        </div>
 
-        <section>
+
+        <div class="aboutMe">
             <h3>Обо мне</h3>
 
             <h4>Тотемное животное:</h4>
@@ -106,7 +114,7 @@ void CollisionMap::checkAllCollisions() {
 ░░░░░░░░░░░▌▌░▌▌░░░░░
 ░░░░░░░░░░░▌▌░▌▌░░░░░   
 ░░░░░░░░░▄▄▌▌▄▌▌░░░░░
-        </pre>
+    </pre>
 
             <h4>Любимая цитата:</h4>
             <blockquote>
@@ -115,10 +123,11 @@ void CollisionMap::checkAllCollisions() {
             </blockquote>
 
             <h4>Формула успеха:</h4>
-            <span class="formula">
+            <div class="formula">
                 Энтузиазм<sub>внезапный</sub> + Практика<sup>много</sup> * Анализ<sub>интеллектуальный</sub> = Успех!<sub>возможный</sub>
-            </span>
-        </section>
+            </div>
+        </div>
+
 
 
 

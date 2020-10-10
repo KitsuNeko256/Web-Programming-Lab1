@@ -21,8 +21,10 @@
   <ItemGroup>
     <None Include="..\index.html" />
     <None Include="..\outlines.css" />
+    <None Include="..\styles.css" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\background.jpg" />
     <Image Include="..\Макет страницы.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
