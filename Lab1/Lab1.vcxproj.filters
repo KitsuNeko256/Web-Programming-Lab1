@@ -32,5 +32,8 @@
     <Image Include="..\Макет страницы.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="..\game_pic.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

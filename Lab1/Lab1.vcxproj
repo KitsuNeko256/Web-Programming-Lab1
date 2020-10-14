@@ -25,6 +25,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\background.jpg" />
+    <Image Include="..\game_pic.png" />
     <Image Include="..\Макет страницы.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

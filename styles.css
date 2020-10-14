@@ -2,7 +2,7 @@
 :root {
     --bg_color: #100020;
     --fg_color_purple: #302050b0;
-    --fg_color_pink: #401040;
+    --fg_color_pink: #401040b0;
     --border_color: #60a0a0;
     --text_color: #90e0e0;
     --pre_color: #202020;
@@ -41,11 +41,12 @@ nav {
     margin-right: 10%;
 }
 
-main, aside {
-    width: 60%;
+main {
     margin-left: 10%;
     margin-right: 10%;
+    display: flex;
 }
+
 
 nav, aside, .aboutMe, .skills, .examples {
     margin-top: 3%;
@@ -53,8 +54,7 @@ nav, aside, .aboutMe, .skills, .examples {
 }
 
 aside {
-    width: 20%;
-    right: 0px;
+    margin-left: 5%;
 }
 
 
@@ -65,7 +65,6 @@ pre, .formula {
     background-color: var(--pre_color);
     padding: 10px 10px 10px 10px;
 }
-
 
 dt {
     font-size: 18px;
@@ -109,4 +108,24 @@ h4 {
 
 .aboutMe {
     background-color: var(--fg_color_pink);
+}
+
+.examplesImage img {
+    border: 3px solid var(--pre_border_color);
+    margin-right: 5px;
+    float: left;
+}
+
+.clearFloat {
+    clear: both;
+}
+
+.mainPart {
+    width: 70%;
+}
+
+.asideText {
+    top: 25px;
+    position: -webkit-sticky;
+    position: sticky;
 }

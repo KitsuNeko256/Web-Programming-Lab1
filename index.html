@@ -21,47 +21,48 @@
     </header>
 
     <main>
-        <h1>Портфолио</h1>
-        <h2>Андрей Козлов, студент 3 курса ИТМО</h2>
 
-        <div class="skills">
-            <section>
-                <h4>Мои навыки:</h4>
-                <dl>
-                    <dt>Программирование на С++</dt>
-                    <dd>Изучаю и практикую С++ более семи лет</dd>
-                    <dd>Четыре года занимался спортивным программированием и проходил курсы с опытными участниками олимпиад</dd>
-                    <dt>Английский язык</dt>
-                    <dd>Свободно говорю и понимаю английский язык на уровне C1 или выше</dd>
-                    <dd>Дважды проходил экзамен IELTS с общими оценками 7 и 7.5</dd>
-                </dl>
-            </section>
+        <div class="mainPart">
+            <h1>Портфолио</h1>
+            <h2>Андрей Козлов, студент 3 курса ИТМО</h2>
+            <div class="skills">
+                <section>
+                    <h4>Мои навыки:</h4>
+                    <dl>
+                        <dt>Программирование на С++</dt>
+                        <dd>Изучаю и практикую С++ более семи лет</dd>
+                        <dd>Четыре года занимался спортивным программированием и проходил курсы с опытными участниками олимпиад</dd>
+                        <dt>Английский язык</dt>
+                        <dd>Свободно говорю и понимаю английский язык на уровне C1 или выше</dd>
+                        <dd>Дважды проходил экзамен IELTS с общими оценками 7 и 7.5</dd>
+                    </dl>
+                </section>
 
-            <section>
-                <h4>Мои достижения:</h4>
-                <ol>
-                    <li>Закончил 12 лет в лицее физико-математического направления</li>
-                    <li>Участвовал в нескольких олимпиадах по спортивному программированию для школьников и занимал призовые места</li>
-                    <li>Обучаюсь в университете ИТМО на специализации ИТИП/ИС на третьем курсе  </li>
-                </ol>
+                <section>
+                    <h4>Мои достижения:</h4>
+                    <ol>
+                        <li>Закончил 12 лет в лицее физико-математического направления</li>
+                        <li>Участвовал в нескольких олимпиадах по спортивному программированию для школьников и занимал призовые места</li>
+                        <li>Обучаюсь в университете ИТМО на специализации ИТИП/ИС на третьем курсе  </li>
+                    </ol>
 
-            </section>
+                </section>
 
-            <section>
-                <h4>Мои цели:</h4>
-                <ul>
-                    <li>Совершенствовать знание языка и алгоритмов для написания быстрого и эффективного кода</li>
-                    <li>Изучение различных аспектов разработки игр и гейм-дизайна</li>
-                    <li>Создать игру</li>
-                </ul>
-            </section>
-        </div>
+                <section>
+                    <h4>Мои цели:</h4>
+                    <ul>
+                        <li>Совершенствовать знание языка и алгоритмов для написания быстрого и эффективного кода</li>
+                        <li>Изучение различных аспектов разработки игр и гейм-дизайна</li>
+                        <li>Создать игру</li>
+                    </ul>
+                </section>
+            </div>
 
-        <div class="examples">
-            <section>
-                <h3>Примеры моего кода</h3>
-                <h4>Код обхода карты коллизий</h4>
-                <pre><code>
+            <div class="examples">
+                <section>
+                    <h3>Примеры моего кода</h3>
+                    <h4>Код обхода карты коллизий</h4>
+                    <pre><code>
     void CollisionMap::checkAllCollisions() {
         for (uint16_t x1 = 0; x1 < width; ++x1) {
             for (uint16_t y1 = 0; y1 < height; ++y1) {
@@ -90,15 +91,25 @@
         }
     }
                 </code></pre>
-            </section>
-        </div>
+                </section>
+                <section>
+                    <h3>Скриншоты моих программ</h3>
+                    <div class="examplesImage">
+                        <h4>Платформер</h4>
+                        <img src="game_pic.png" style="width: 50%; height: 50%" />
+                        Скриншот из разрабатываемой мною игры, инновационный инди платформер с интересным геймплеем
+                        и не менее интересной графикой!
+                        Будущий шедевр!
+                        <div class="clearFloat"></div>
+                    </div>
+                </section>
+            </div>
 
+            <div class="aboutMe">
+                <h3>Обо мне</h3>
 
-        <div class="aboutMe">
-            <h3>Обо мне</h3>
-
-            <h4>Тотемное животное:</h4>
-            <pre> 
+                <h4>Тотемное животное:</h4>
+                <pre> 
 ░░░░░░░░░░░░░░░░░░░
 ░ГУСЬ░▄▀▀▀▄░ГИДРА░░
 ▄███▀░◐░▄▀▀▀▄░░░░░░
@@ -116,31 +127,33 @@
 ░░░░░░░░░▄▄▌▌▄▌▌░░░░░
     </pre>
 
-            <h4>Любимая цитата:</h4>
-            <blockquote>
-                <p>Слушай, Симон. <strong>Запомни.</strong> Тебе надо верить в <em>себя.</em> Не в себя, в которого верю я. И даже не в мою веру в тебя. <strong>Верь в себя!</strong> И в <em>свою</em> веру в себя!</p>
-                <cite>Камина, Tengen Toppa Gurren Lagann &copy;</cite>
-            </blockquote>
+                <h4>Любимая цитата:</h4>
+                <blockquote>
+                    <p>Слушай, Симон. <strong>Запомни.</strong> Тебе надо верить в <em>себя.</em> Не в себя, в которого верю я. И даже не в мою веру в тебя. <strong>Верь в себя!</strong> И в <em>свою</em> веру в себя!</p>
+                    <cite>Камина, Tengen Toppa Gurren Lagann &copy;</cite>
+                </blockquote>
 
-            <h4>Формула успеха:</h4>
-            <div class="formula">
-                Энтузиазм<sub>внезапный</sub> + Практика<sup>много</sup> * Анализ<sub>интеллектуальный</sub> = Успех!<sub>возможный</sub>
+                <h4>Формула успеха:</h4>
+                <div class="formula">
+                    Энтузиазм<sub>внезапный</sub> + Практика<sup>много</sup> * Анализ<sub>интеллектуальный</sub> = Успех!<sub>возможный</sub>
+                </div>
             </div>
         </div>
 
-
-
+        <aside>
+            <div class="asideText">
+                <h4>Ссылки на полезные и интересные ресурсы</h4>
+                <h5>Игры и гейм-дизайн:</h5>
+                <a href="https://www.youtube.com/channel/UCY3A_5R_m3PXCn5XDhvBBsg">Youtube - Adam Millard - The Architect of Games</a><br />
+                <a href="https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw">Youtube - GMTK - Game Maker's Toolkit</a><br />
+                <a href="https://www.youtube.com/channel/UCfHmyqCntYHQ81ZukNu66rg">Youtube - Razbuten</a><br />
+            </div>
+        </aside>
 
     </main>
 
+
     <footer>
-        <aside>
-            <h4>Ссылки на полезные и интересные ресурсы</h4>
-            <h5>Игры и гейм-дизайн:</h5>
-            <a href="https://www.youtube.com/channel/UCY3A_5R_m3PXCn5XDhvBBsg">Youtube - Adam Millard - The Architect of Games</a><br />
-            <a href="https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw">Youtube - GMTK - Game Maker's Toolkit</a><br />
-            <a href="https://www.youtube.com/channel/UCfHmyqCntYHQ81ZukNu66rg">Youtube - Razbuten</a><br />
-        </aside>
         <br />
         <time datetime="15-09-2020">Версия сайта от 15 Сентября 2020 года</time>
     </footer>
